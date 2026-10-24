@@ -1,0 +1,21 @@
+[package]
+name = "rustilizer2"
+version = "0.1.0"
+edition = "2021"
+description = "A lightweight rainbow audio equalizer bar sitting on the Windows taskbar"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/404fr/Rustilizer2"
+keywords = ["audio", "equalizer", "visualizer", "taskbar", "windows"]
+categories = ["multimedia::audio", "os::windows-apis"]
+
+[dependencies]
+cpal = "0.15"
+rustfft = "6.2"
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Gdi",
+    "Win32_System_LibraryLoader",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+] }
